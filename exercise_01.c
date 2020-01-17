@@ -23,9 +23,9 @@ void* decrementingThreadFunction() {
 
 int main() {
 	// TODO: declare incrementingThread and decrementingThread (hint: google pthread_create)
-	pthread_t thread_1;
+	pthread_t incrementingThread;
 	pthread_create(&incrementingThread, NULL, incrementingThreadFunction, NULL);
-	pthread_t thread_2;
+	pthread_t decrementingThread;
 	pthread_create(&decrementingThread, NULL, decrementingThreadFunction, NULL);
 
 	pthread_join(incrementingThread, NULL);
