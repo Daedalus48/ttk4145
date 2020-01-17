@@ -1,0 +1,53 @@
+01.
+Concurrency is when two or more tasks are executed simultaniously, 
+in an unspecified order. When one task is in waiting state the 
+CPU starts running an other task. For the user it looks like they 
+are executed at the same thime.
+
+Parallelism is when  muliple tasks are running at the same thime.
+
+The difference is that parallelism is running multiple tasks at 
+the same thime, while concurrency is just executing multiple task 
+in overlapping time periods, but never executing more of them at once.
+
+
+02.
+We reached the peak of CPU speed at 2006. In order to make them,
+ewen faster they would have required so much energy, that they 
+would have burned up. The solution was to use more, cheaper 
+CPU cores insted and take advantage of parallelism. This is both
+time, energy and cost efficient.
+
+
+03.
+multiple applications running on a computer at once
+websites must handle multiple simultaneous users
+mobile apps do some of their processing on servers
+
+
+04.
+harder
+It makes it difficult to keep track of the order in wich code is 
+executed. Kreates difficulties when two processes are using 
+the same variable.
+
+
+05.
+Processes are OS-managed and exist within their own address space.
+Threads  are also OS-managed but exist within the same address space as the parent.
+Green threads are like threads, but are not OS-managed.
+Coroutines are like threads, except co-operativly multitasking 
+and not OS-managed.
+
+
+06.
+they kreate threads
+
+
+07.
+GIL only allowes one thread to be run at a time.
+
+
+08.
+func GOMAXPROCS(n int) int sets the max number of CPU that can 
+be executing at a time. 
