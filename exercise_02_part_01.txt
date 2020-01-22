@@ -1,0 +1,32 @@
+1.
+Atomic operations in concurrent programming are program operations that run completely independently of any other processes.
+
+
+2.
+A semaphore is a variable used to control access to a common resource by multiple processes in a concurrent system such as a multitasking operating system.
+
+
+3.
+A mutual exclusion object (mutex) is a program object that allows multiple program threads to share the same resource, such as file access, but not simultaneously.
+
+
+4.
+Semaphore is a signalling mechanism i.e. processes perform wait() and signal() operation to indicate whether they are acquiring or releasing the resource, but is not protecting the resource from access. 
+Mutex is a locking mechanism, the process has to acquire the lock on mutex object if it wants to acquire the resource.
+
+
+5.
+A Critical Section is a code segment that accesses shared variables and has to be executed as an atomic action. Paralell processes mustn't execute the critical section at the same time.
+
+
+6.
+In a race condition the result of an operation depends on some other operation, (like an other thread changing the argument of an if statement). Data race means that two or more processes are trying to access the same wariable, while some of them is modifying it.
+
+
+7.
+Using lock based syncronization, threads must wait until the lock is released.
+Lock related bugs are time dependant, therefor difficult to replicate and fix.
+
+
+8.
+Message passing has slower communication in general.
